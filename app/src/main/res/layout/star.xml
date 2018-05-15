@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    android:background="#8000">
+    <TextView
+        android:id="@+id/today_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="今日运势:"
+        android:textSize="20sp"
+        android:textColor="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_star"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="3"
+            android:hint="输入星座，如：白羊座"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:background="@android:color/transparent"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_query_starInfo"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="@color/car_cl_unchoose"
+            android:text="查询"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/starInfo_result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        />
+
+
+</LinearLayout>
